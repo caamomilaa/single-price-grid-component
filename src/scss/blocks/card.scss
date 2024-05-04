@@ -1,0 +1,30 @@
+@use '../mixins/responsive.scss' as *;
+.card{
+    padding: 28px 24px 32px 24px;
+    &__join{
+        background-color: white;
+        border-radius: 5px 5px 0 0;
+    }
+    &__monthly{
+        background-color: #2AB3B1;
+        @include responsive (laptop){
+            width: 317px;
+        }
+    }
+    &__why{
+        background-color: #2ab3b1cf;
+        @include responsive (laptop){
+            width: 317px;
+        }
+    }
+    &__price{
+        display: flex;
+        align-items: center;
+        gap: 11px;
+    }
+    &__container{
+        @include responsive (laptop){
+            display: flex;
+        }
+    }
+}

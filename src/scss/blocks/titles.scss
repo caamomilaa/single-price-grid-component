@@ -1,1 +1,14 @@
-
+@use '../mixins/responsive.scss' as *;
+.title{
+    font-weight: 700;
+    font-size: 20px;
+    @include responsive (laptop){
+        font-size: 1.5rem;
+    }
+    &--green{
+        color: #2AB3B1;
+    }
+    &--white{
+        color: white;
+    }
+}
